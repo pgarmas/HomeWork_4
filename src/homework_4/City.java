@@ -11,20 +11,31 @@ package homework_4;
  */
 public class City {
     public String name;
-    public int population=1000;
-    
-    public void talk() {
-        if (population<=9999) {
-            System.out.println(name +" - один из немногочисленных городов в нашей стране.");
-        }
-        if (population>=1000000&&population<999999999) {
-            System.out.println(name +" - один из более развитых городов в нашей стране.");
-        }
-        if (population>=1000000000) {
-            System.out.println(name +" - один из многочисленных городов в нашей стране.");
-        }
+    public int population;
+    public Human major;
+
+    public City(String name) {
+        this.name=name;
+        this.population=0;
+    }
+
+    public City(String name, int population) {
+        this.name = name;
+        this.population = population;
+    }
+
+    public City(String name, int population, Human major) {
+        this.name = name;
+        this.population = population;
+        this.major = major;
     }
     
+    
+    
+    
+    
+    
+       
     
 }
 

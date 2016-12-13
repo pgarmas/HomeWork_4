@@ -16,23 +16,65 @@ public class HomeWork_4 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Country country1;
-        country1 = new Country ();
-        country1.name="Latvia";
-        country1.quantity=1000000;
-        country1.talk();
+        Country latvija;
+        latvija = new Country ();
+        latvija.name="Latvia";
+        latvija.population=1000000;
         
-        City city1;
-        city1 = new City ();
-        city1.name="Riga";
-        city1.population=400000000;
-        city1.talk();
+        City riga = new City ("Riga",400000000);
         
-        Human human1;
-        human1= new Human();
-        human1.name="Vasja";
-        human1.age= 45;
-        human1.talk();
+        Human vasja;
+        vasja= new Human("Vasja", 45);
+        
+        
+        
+        
+        //Васю в президенты латвии
+        latvija.president=vasja;
+        
+        //Ригу в столшицы латвии
+        latvija.capital=riga;
+        
+        Human petr;
+        petr= new Human("Petja", 46);
+        
+        riga.major=petr;
+        
+        System.out.println(latvija.president.name);
+        
+        System.out.println(riga.major.age);
+        
+        riga.population+=500;
+        
+        latvija.population+=700;
+        
+        latvija.president=petr;
+        
+        petr.age++;
+        
+        vasja.name="Vasilio";
+        
+        riga.population-=100;
+        
+        System.out.println(riga.major.name);
+        
+        Country estonia;
+        estonia= new Country();
+        estonia.population=2000000;
+        City tallinn = new City("Tallinn", 400000);
+        estonia.capital=tallinn;
+        
+        System.out.println(estonia.capital.name);
+                
+        
+
+        
+        
+        
+        
+        
+        
+
     }
     
 }

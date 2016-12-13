@@ -13,18 +13,17 @@ public class Human {
     public String name;
     public int age;
     
-    public void talk() {
-        if (age<=30) {
-            System.out.println("У нас студентческий город.");
-        }
-        if (age>=31&&age<60) {
-            System.out.println("В нашем городе живут люди с высшим образованием.");
-        }
-        if (age>=61) {
-            System.out.println("Наш город для пенсионеров.");
-        }
+    public Human (String name){
+        this.name=name;
+        this.age=0;
+    }
+
+    public Human(String name, int age) {
+        this.name = name;
+        this.age = age;
     }
     
+   
     
 }
 
