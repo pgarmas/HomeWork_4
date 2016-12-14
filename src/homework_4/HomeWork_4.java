@@ -17,7 +17,7 @@ public class HomeWork_4 {
     public static void main(String[] args) {
         // TODO code application logic here
         Country latvija;
-        latvija = new Country ();
+        latvija = new Country ("latvija", 10000000, null, null);
         latvija.name="Latvia";
         latvija.population=1000000;
         
@@ -48,6 +48,7 @@ public class HomeWork_4 {
         
         latvija.population+=700;
         
+        
         latvija.president=petr;
         
         petr.age++;
@@ -59,22 +60,15 @@ public class HomeWork_4 {
         System.out.println(riga.major.name);
         
         Country estonia;
-        estonia= new Country();
-        estonia.population=2000000;
-        City tallinn = new City("Tallinn", 400000);
-        estonia.capital=tallinn;
+        estonia= new Country("Estonia", 2000000, null, new City("Tallinn", 400000));
+
         
         System.out.println(estonia.capital.name);
-                
-        
-
-        
-        
-        
-        
-        
-        
-
+        System.out.println(estonia.population);
+        System.out.println(estonia.capital.population);
+        City revel = estonia.capital;
+        System.out.println(revel.population);
+        System.out.println(estonia.population);
     }
     
 }

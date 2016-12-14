@@ -23,7 +23,11 @@ public class Human {
         this.age = age;
     }
     
-   
+   public void Birthday()
+   {
+       age++;
+       System.out.println("Сегодня я стал на год старше. Мне теперь "+ age);
+   }
     
 }
 

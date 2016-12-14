@@ -15,4 +15,21 @@ public class Country {
     public int population;
     public Human president;
     public City capital;
+    
+    public Country(String name) {
+        this.name=name;
+        population=0;
+    }
+
+    public Country(String name, int population, Human president, City capital) {
+        this.name = name;
+        this.population = population;
+        this.president = president;
+        this.capital = capital;
+    }
+    
+    
+    
+    
 }
+
